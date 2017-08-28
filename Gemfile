@@ -3,8 +3,14 @@ source 'https://rubygems.org'
 
 
 # Heroku
-gem 'pg'
-gem 'rails_12factor', group: :production
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', group: :production
+end
+
 # Comments
 gem 'commontator', '~> 4.11.1'
 # Deivse
