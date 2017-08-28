@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 
 # Heroku
-gem 'sqlite3'
 gem 'pg'
 gem 'rails_12factor', group: :production
 # Comments
